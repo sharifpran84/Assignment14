@@ -1,0 +1,209 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 1370px;
+    margin: 0 auto;
+}
+img{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* header start */
+.headerSection{
+    background: #ffffff;
+}
+.menubar{
+    text-align: center;
+}
+.menubar li{
+    list-style: none;
+    display: inline-block;
+}
+.menubar li a{
+    text-decoration: none;
+    font-size: 25px;
+    background: #48dbfb;
+    display: inline-block;
+    padding: 15px;
+    margin: 6px 1px;
+    color: #140d07;
+    text-transform: uppercase;
+    transition: .5s;
+    position: relative;
+    z-index: 1;
+}
+.menubar li a:hover {
+    color: #48dbfb;
+    background: whitesmoke;
+}
+.menubar li a:hover::before{
+    width: 100%;
+}
+.menubar li a::before{
+    content: "";
+    position: absolute;
+    bottom: 12%;
+    left: 0;
+    width: 0%;
+    height: 8%;
+    background: black;
+    z-index: -1;
+    transition: .5s;
+}
+/* header end */
+
+
+/* hero section start */
+.heroSection{
+    background: #48dbfb;
+}
+.hero{
+    text-align: center;
+    padding: 50px;
+}
+.hero h5{
+    color: #f4f4f4;
+    font-size: 25px;
+    text-transform: capitalize;
+}
+.hero h1{
+    color: #f4f4f4;
+    text-transform: capitalize;
+    font-size: 65px;
+    padding: 10px 0;
+}
+.hero button {
+    font-size: 25px;
+    padding: 13px;
+    border-radius: 15px;
+    border: none;
+    text-transform: capitalize;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+.hero button i{
+    margin: 7px;
+}
+.hero button:hover{
+    color: white;
+}
+.hero button:hover::before{
+    width: 100%;
+}
+.hero button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: black;
+    z-index: -1;
+    transition: .8s;
+    border-radius: 15px;
+}
+/* hero section end */
+
+/* gallary start */
+.gallarySection {
+    background: #ffffff;
+    padding: 15px;
+}
+.contantSection {
+    text-align: center;
+    padding: 30px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+.contantSection h2{
+    text-transform: uppercase;
+}
+.imageSection .image {
+    width: 300px;
+    display: inline-block;
+    text-align: center;
+    margin: 1px 8px;
+    padding: 10px;
+    transition: .5s;
+}
+.a1:hover{
+    transform: scale(1.2) rotate(360deg);
+}
+.a2:hover{
+    transform: translate(50px,30px) rotate(360deg);
+}
+.a3:hover {
+    transform: skew(-4deg, -2deg);
+}
+.text h2{
+    font-size: 40px;
+    line-height: 2;
+    text-align: center;
+    margin-top: 80px;
+    text-transform: capitalize;
+}
+.text p{
+    text-align: justify;
+}
+.boxText{
+    background: black;
+    color: white;
+    display: inline-block;
+    padding: 15px;
+    text-transform: uppercase;
+    font-size: 21px;
+}
+.laststap {
+    text-align: center;
+    position: relative;
+    padding: 20px;
+    margin: 30px 0;
+    transition: .5s;
+}
+.one {
+    position: absolute;
+    top: 0%;
+    left: 20%;
+    transform: rotate(-50deg);
+}
+.one:hover{
+    transform: rotate(0deg);
+    background: blue;
+}
+.two{
+    position: absolute;
+    top: 0;
+    left: 46%;
+}
+.two:hover{
+    transform: scale(1.2);
+    background: blue;
+}
+.three {
+    position: absolute;
+    top: 0;
+    right: 20%;
+    transform: rotate(50deg);
+}
+.three:hover{
+    transform: rotate(0deg);
+    background: blue;
+}
+/* gallary end */
+
+
+/* footer star */
+.footersection{
+    background: black;
+}
+.footer h4 {
+    text-align: center;
+    padding: 25px;
+    color: white;
+    text-transform: capitalize;
+}
+/* footer end */
